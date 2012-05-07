@@ -8,7 +8,7 @@
 
 10.times do 
   father = Factory(:father)
-  500.times do 
+  15.times do 
     Factory(:son, :father => father)
   end
 end
