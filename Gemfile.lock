@@ -48,6 +48,7 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     bbenezech-nested_form (0.0.6)
+    bcrypt-ruby (3.0.1)
     bootstrap-sass (2.0.2)
     builder (3.0.0)
     coffee-rails (3.2.2)
@@ -57,6 +58,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.1)
+    devise (2.0.4)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.0.3)
+      railties (~> 3.1)
+      warden (~> 1.1.1)
     erubis (2.7.0)
     execjs (1.3.2)
       multi_json (~> 1.0)
@@ -89,6 +95,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.18)
     multi_json (1.3.4)
+    orm_adapter (0.0.7)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -138,12 +145,15 @@ GEM
     uglifier (1.2.4)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
+    warden (1.1.1)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  devise
   factory_girl_rails (~> 1.3.0)
   faker (~> 1.0.1)
   jquery-rails
